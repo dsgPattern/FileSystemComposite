@@ -24,5 +24,7 @@ public class Main {
         folder1.add(folder11);
 
         System.out.println(c.getSize());
+
+        System.out.println(c.getContent());
     }
 }

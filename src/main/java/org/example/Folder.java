@@ -34,7 +34,14 @@ public class Folder implements IFileSystemComposite{
 
     @Override
     public String getContent() {
-        return null;
+        String content = _name;
+        content += "\n";
+        for(int i=0; i<_items.size();i++)
+        {
+            content+=" "+_items.get(i).getContent() +"\n";
+        }
+
+        return content;
     }
 
     @Override
